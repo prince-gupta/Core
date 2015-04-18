@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="BundleExample">
+  <library name="BundleExample2">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/src/com/company/bundle/BundleExample.jar!/" />
     </CLASSES>
