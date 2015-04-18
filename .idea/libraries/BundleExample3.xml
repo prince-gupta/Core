@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="BundleExample3">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/out/production/Core/com/company/bundle/BundleExample.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

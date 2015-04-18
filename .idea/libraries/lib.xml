@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/jar/htmlparser1_6_20060610/htmlparser1_6/lib/htmlparser.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jar/htmlparser1_6_20060610/htmlparser1_6/lib/filterbuilder.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jar/htmlparser1_6_20060610/htmlparser1_6/lib/thumbelina.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jar/htmlparser1_6_20060610/htmlparser1_6/lib/sax2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jar/htmlparser1_6_20060610/htmlparser1_6/lib/junit.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jar/htmlparser1_6_20060610/htmlparser1_6/lib/htmllexer.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
