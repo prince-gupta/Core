@@ -51,4 +51,8 @@ public class Stack<T> {
         for (int index = stack.size() - 1; index >= 0; index--)
             System.out.println(stack.get(index));
     }
+
+    public boolean isEmpty(){
+        return stack.isEmpty();
+    }
 }

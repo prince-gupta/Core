@@ -1,3 +1,4 @@
+/*
 import org.joda.time.DateTime;
 import org.joda.time.DateTimeZone;
 import org.joda.time.LocalDateTime;
@@ -7,12 +8,15 @@ import org.joda.time.format.DateTimeFormatter;
 import java.util.Date;
 import java.util.TimeZone;
 
+*/
 /**
  * Created by Pgupta on 4/1/2015.
- */
+ *//*
+
 public class JODATimeTest {
     public static void main(String[] args) {
-      /*  for (String dateTimeZone : DateTimeZone.getAvailableIDs()) {
+      */
+/*  for (String dateTimeZone : DateTimeZone.getAvailableIDs()) {
             System.out.println("----- " + dateTimeZone + " ---------");
             DateTimeZone zone = DateTimeZone.forID(dateTimeZone);
             // DateTimeZone zone = DateTimeZone.forTimeZone(TimeZone.getTimeZone("MST"));
@@ -28,7 +32,8 @@ public class JODATimeTest {
                         + !zone.isStandardOffset(next));
                 current = next;
             }
-        }*/
+        }*//*
+
 
         // LocalDateTime dt = new LocalDateTime(System.currentTimeMillis());
         DateTime dt1 = new LocalDateTime(new Date("Sun Mar 08 00:00:00 PST 2015")).toDateTime(DateTimeZone.forTimeZone(TimeZone.getTimeZone("PST")));
@@ -43,11 +48,13 @@ public class JODATimeTest {
        // Date dateTimeZone = dateTime.toDateTimeAtStartOfDay(timeZone).toDate();
         System.out.println(formatter1.print(dateTimeNew));
 
+*/
 /*
         System.out.print(TimeZone.getDefault().toString());
         System.out.print(TimeZone.getDefault().getRawOffset());
         System.out.println(TimeZone.getTimeZone("EST").inDaylightTime(new Date("Mon Apr 06 03:00:00 EST 2015")));
-*/
+*//*
+
         float value = 3.5f;
         long longV = (long)(3.5*60*60*1000);
         System.out.print(longV);
@@ -57,3 +64,4 @@ public class JODATimeTest {
         }
     }
 }
+*/

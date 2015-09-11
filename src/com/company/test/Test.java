@@ -1,3 +1,4 @@
+/*
 package com.company.test;
 
 import org.joda.time.DateTime;
@@ -6,15 +7,18 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
+*/
 /**
  * Created by Pgupta on 1/13/2015.
- */
+ *//*
+
 public class Test {
     public static final String SQL_WILDCARD ="%";
     public static final String SQL_ESCAPE = "";
     public static final String SQL_WILDCARD_REGEX = "["+ SQL_WILDCARD +","+SQL_ESCAPE+"].*";
     public static void main(String args[]) throws ParseException {
-        /*Double gross = new Double(425);
+        */
+/*Double gross = new Double(425);
         Double dscntPrcnt = new Double(7.5/100);
         Double cost = new Double(393.125);
         System.out.println(BigDecimal.valueOf((gross - (gross * dscntPrcnt))));
@@ -33,7 +37,8 @@ public class Test {
         hashMap.put(one, 1);
         System.gc();
         System.out.println(weakHashMap);
-        System.out.println(hashMap);*/
+        System.out.println(hashMap);*//*
+
 
         String s = "insert OR ";
         System.out.println(s.substring(0,s.indexOf(" OR ")));
@@ -103,3 +108,4 @@ public class Test {
         System.out.println(m.size());
     }
 }
+*/
