@@ -19,7 +19,7 @@ public class MyThread extends Thread {
         synchronized (o) {
             while (num < 10) {
                 if (count % 3 == id) {
-                    System.out.print(ID);
+                    System.out.println(ID);
                     ++count;
                     ++num;
                     o.notifyAll();

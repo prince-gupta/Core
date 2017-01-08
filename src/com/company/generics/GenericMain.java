@@ -20,5 +20,10 @@ public class GenericMain {
         List l = new ArrayList<Integer>();
         l.add("12.9");
         System.out.println(l);
+
+        GenericClassB<SolidClass> b = new GenericClassB<SolidClass>();
+        List<SolidClass> list = new ArrayList<SolidClass>();
+        list.add(new SolidClass());
+        b.printClassName(list);
     }
 }

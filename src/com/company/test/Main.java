@@ -5,7 +5,7 @@ import java.util.*;
 public class Main {
 
     public static void main(String[] args) {
-        long sortedArray[] = {1,2,3,4,5,6,7};
+        /*long sortedArray[] = {1,2,3,4,5,6,7};
         int unsortedArray[] = {3,2,7,4,8,5,9,6};
         System.out.println(Arrays.binarySearch(sortedArray, 2));
         System.out.println(Arrays.binarySearch(sortedArray, 10));
@@ -55,5 +55,13 @@ public class Main {
 
         System.out.println(hashMap.get(key1));
 
+        System.out.println(44%46);*/
+
+        Double d1 = new Double(0.0d);
+        //System.out.println(d1==0);
+        Map<String, String> a = new HashMap<String, String>();
+        Map<String, Date> b = new HashMap<String, Date>();
+        b.put("a", new Date());
+        System.out.println(b.entrySet().iterator().next().getValue() instanceof Date);
     }
 }

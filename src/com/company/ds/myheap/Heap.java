@@ -3,9 +3,6 @@ package com.company.ds.myheap;
 import java.util.ArrayList;
 import java.util.NoSuchElementException;
 
-/**
- * Created by Pgupta on 2/27/2015.
- */
 public class Heap<Anytype extends Comparable<Anytype>> {
 
     private ArrayList<Anytype> heapArray;
@@ -146,8 +143,10 @@ public class Heap<Anytype extends Comparable<Anytype>> {
     }
 
     public static void main(String[] args){
-        Heap<Integer> heap = new Heap<Integer>();
-        int[] array = {23,3,45,7,4,87,32,553,23,-2,-34,-53,12,34};
+        Heap<String> heap = new Heap<String>();
+       // String[] array = {23,3,45,7,4,87,32,553,23,-2,-34,-53,12,34};
+        String sentence = "the quick lazy fox jumps over a lazy dog";
+        String[] array = sentence.split(" ");
         for(int i = 0 ; i < array.length; i++){
             heap.insert(array[i]);
         }

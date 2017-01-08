@@ -1,22 +1,17 @@
-/*
 import org.joda.time.DateTime;
+import org.joda.time.DateTimeConstants;
 import org.joda.time.DateTimeZone;
 import org.joda.time.LocalDateTime;
 import org.joda.time.format.DateTimeFormat;
 import org.joda.time.format.DateTimeFormatter;
 
+import java.util.Calendar;
 import java.util.Date;
 import java.util.TimeZone;
 
-*/
-/**
- * Created by Pgupta on 4/1/2015.
- *//*
-
 public class JODATimeTest {
     public static void main(String[] args) {
-      */
-/*  for (String dateTimeZone : DateTimeZone.getAvailableIDs()) {
+  /*for (String dateTimeZone : DateTimeZone.getAvailableIDs()) {
             System.out.println("----- " + dateTimeZone + " ---------");
             DateTimeZone zone = DateTimeZone.forID(dateTimeZone);
             // DateTimeZone zone = DateTimeZone.forTimeZone(TimeZone.getTimeZone("MST"));
@@ -32,7 +27,7 @@ public class JODATimeTest {
                         + !zone.isStandardOffset(next));
                 current = next;
             }
-        }*//*
+        }
 
 
         // LocalDateTime dt = new LocalDateTime(System.currentTimeMillis());
@@ -48,12 +43,10 @@ public class JODATimeTest {
        // Date dateTimeZone = dateTime.toDateTimeAtStartOfDay(timeZone).toDate();
         System.out.println(formatter1.print(dateTimeNew));
 
-*/
-/*
         System.out.print(TimeZone.getDefault().toString());
         System.out.print(TimeZone.getDefault().getRawOffset());
         System.out.println(TimeZone.getTimeZone("EST").inDaylightTime(new Date("Mon Apr 06 03:00:00 EST 2015")));
-*//*
+
 
         float value = 3.5f;
         long longV = (long)(3.5*60*60*1000);
@@ -61,7 +54,19 @@ public class JODATimeTest {
 
         for(String timeZone : TimeZone.getAvailableIDs()){
             System.out.println(TimeZone.getTimeZone(timeZone).getDisplayName() + " : " + TimeZone.getTimeZone(timeZone).getID());
-        }
+        }*/
+        System.out.println(getSundayForWeek(new Date(System.currentTimeMillis())));
+
+    }
+
+    public static DateTime getSundayForWeek(Date date){
+        DateTime dateTime = new DateTime(date);
+        /*if(dateTime.getDayOfWeek() != DateTimeConstants.SUNDAY)
+            dateTime = dateTime.plusWeeks(1);*/
+        DateTime sundayDateTime = dateTime.withWeekyear(dateTime.getWeekyear())
+                .withWeekOfWeekyear(dateTime.getWeekOfWeekyear())
+                .withDayOfWeek(DateTimeConstants.SUNDAY);
+
+        return sundayDateTime;
     }
 }
-*/
