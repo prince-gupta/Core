@@ -7,4 +7,13 @@ public class Child extends Parent{
     /*public String printM(){
         return "";
     }*/
+
+    public static void print(){
+        System.out.println("From Child");
+    }
+
+    public static void main(String[] args) {
+        Parent p = new Child();
+
+    }
 }

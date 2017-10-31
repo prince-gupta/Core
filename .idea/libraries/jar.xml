@@ -1,8 +1,27 @@
 <component name="libraryTable">
   <library name="jar">
     <CLASSES>
+      <root url="jar://$PROJECT_DIR$/jar/httpcomponents-client-4.5.2-bin.zip!/" />
+      <root url="jar://$PROJECT_DIR$/jar/pdfbox-app-2.0.2.jar!/" />
       <root url="jar://$PROJECT_DIR$/jar/htmlparser1_6_20060610.zip!/" />
+      <root url="jar://$PROJECT_DIR$/jar/comm-2.0.jar.zip!/" />
+      <root url="jar://$PROJECT_DIR$/jar/core-2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jar/javax.mail.jar.zip!/" />
+      <root url="jar://$PROJECT_DIR$/jar/pdfbox-app-1.8.12.jar!/" />
       <root url="jar://$PROJECT_DIR$/jar/src0_82.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jar/way2sms-api-4.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jar/pdfbox-1.8.12.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jar/core-renderer.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jar/joda-time-2.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jar/org-apache-commons-logging.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jar/javase-2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jar/core-3.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jar/yahp.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jar/javase-3.0.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jar/core-renderer-minimal.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jar/javax.mail.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jar/iText-2.0.8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jar/xml-apis-xerces-2.9.1.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

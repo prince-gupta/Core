@@ -52,7 +52,7 @@ public class PrintTest{
             try {
               //  job.print(myDoc, aset);
                 //pjDone.waitForDone();
-                document.silentPrint(job);
+               // document.silentPrint(job);
                 psStream.close();
 
             } catch (Exception pe) {pe.printStackTrace();}
@@ -66,6 +66,6 @@ public class PrintTest{
         PrinterJob job = PrinterJob.getPrinterJob();
         job.setPrintService(printer);
         PDDocument doc = PDDocument.load(new File(""));
-        doc.silentPrint(job);
+       // doc.silentPrint(job);
     }
 }

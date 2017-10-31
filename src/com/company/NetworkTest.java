@@ -9,7 +9,7 @@ import java.net.URL;
  */
 public class NetworkTest {
     public static void main(String[] args) throws IOException {
-        URL url = new URL("http://121.242.92.173:8888/KioskServices/content/getPectabs");
-        System.out.println(url.getContent() != null);
+        URL url = new URL("http://www.google.com");
+        System.out.println(url.getContent());
     }
 }
