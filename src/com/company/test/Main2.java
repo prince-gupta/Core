@@ -38,6 +38,16 @@ public class Main2 {
         Date secondDate = m.parse("750:12:21");
         System.out.println(firstDate.before(secondDate));
         System.out.println(m.parse("332:59:59"));
+
+        Integer a = 5;
+        Integer b = 5;
+        System.out.println(a.equals(b));
+
+
+        Integer a1 = 5000;
+        Integer b1 = 5000;
+        System.out.println(a1.equals(b1));
+
     }
     public Date parse(String dateToParse){
         String hours = dateToParse.substring(0,dateToParse.indexOf(':'));
