@@ -8,7 +8,7 @@ public class Heap<Anytype extends Comparable<Anytype>> {
     private ArrayList<Anytype> heapArray;
 
     public Heap() {
-        heapArray = new ArrayList<Anytype>();
+        heapArray = new ArrayList<>();
     }
 
     /**
@@ -19,7 +19,7 @@ public class Heap<Anytype extends Comparable<Anytype>> {
      * 2. Gets its parent.
      * 3. If parent is smaller than child.
      * 4. Swap them.
-     * 5. Keeps on doing this util we reach to root of heap.
+     * 5. Keeps on doing this until we reach to root of heap.
      */
     private void shiftUp() {
         /**Newly added child which will be at last index.*/

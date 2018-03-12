@@ -10,6 +10,7 @@ public class GraphUtil {
         cycledGraph.addVertices(1,2);
         cycledGraph.addVertices(2,0);
         cycledGraph.addVertices(0,3);
+        cycledGraph.addVertices(0,4);
         cycledGraph.addVertices(3,4);
         System.out.println("Does Graph has cycle : " + cycledGraph.hasCycle());
         System.out.println("Does Graph is a tree : " + cycledGraph.isTree());
