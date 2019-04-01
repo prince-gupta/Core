@@ -1,5 +1,7 @@
 package com.company.java.puzzlers;
 
+import java.util.Date;
+
 /**
  * Created by Pgupta on 11/22/2015.
  */
@@ -20,5 +22,6 @@ public class LongDivision {
         LongDivision ld = new LongDivision();
         ld.printWrongValue();
         ld.printCorrectValue();
+        System.out.println(new Date().toString());
     }
 }

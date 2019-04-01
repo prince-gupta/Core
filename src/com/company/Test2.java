@@ -1,6 +1,9 @@
 package com.company;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.TreeMap;
+import java.util.WeakHashMap;
 
 /**
  * Created by Pgupta on 28-04-2016.
@@ -43,6 +46,33 @@ public class Test2 {
         });
 
         System.out.println("Hi");
+
+        Map<Key, Integer> weakHM = new WeakHashMap<>();
+        Key key1 = new Key();
+        key1.setName("1");
+        Key key2 = new Key();
+        key2.setName("2");
+
+        weakHM.put(key1, 1);
+        weakHM.put(key2, 2);
+
+        Map<Key, Integer> hm = new HashMap<>();
+
+      //  hm.put(key1, 1);
+        hm.put(key2, 2);
+
+
+        key1 = null;
+        System.gc();
+        for (final Map.Entry<Key, Integer> entry : weakHM.entrySet()) {
+            System.out.println(entry.getKey().getName() + "   " + entry.getValue());
+        }
+
+        for (final Map.Entry<Key, Integer> entry : hm.entrySet()) {
+            System.out.println(entry.getKey().getName() + "   " + entry.getValue());
+        }
+
+
     }
 
     public void simulateCallback(InnerInterface innerInterface) {
@@ -51,5 +81,17 @@ public class Test2 {
 
     interface InnerInterface {
         public void printMessage();
+    }
+
+    public static class Key {
+        String name;
+
+        public String getName() {
+            return name;
+        }
+
+        public void setName(String name) {
+            this.name = name;
+        }
     }
 }
